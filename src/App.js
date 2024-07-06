@@ -1,21 +1,39 @@
-
+import React, { useRef } from 'react';
 import './App.css';
 import Navbar from './components/Navbar'
+import Home from './components/Home'
+import About from './components/About'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+
+  const HomeRef = React.useRef(null);
+  const AboutRef = React.useRef(null);
+  const ProjectsRef = React.useRef(null);
+  const ContactRef = React.useRef(null);
+
   return (
     <div className="App">
       <header
         id="Navbar"
         className="fixed left-0 top-0 z-50 flex h-20 w-full items-center justify-center border-b-2"
       >
-        <Navbar />
+        <Navbar HomeRef={HomeRef} AboutRef={AboutRef} ProjectsRef={ProjectsRef} ContactRef={ContactRef} />
       </header>
-        <h1>React 18 Alpha</h1>
-        <p>
-          Edit 2<code>src/App.js</code> and save to reload.
-        </p>
+      <div ref={HomeRef}>
+        <Home />
+      </div>
+      <div ref={AboutRef}>
+        <About />
+      </div>
+      <div ref={ProjectsRef}>
+        <Projects />
+      </div>
+      <div ref={ContactRef}>
+        <Contact />
+      </div>
     </div>
   );
 }

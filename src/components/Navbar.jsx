@@ -1,9 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import resume from "../assets/RhysLeeResume.pdf";
 
-const Navbar = () => {
+const Navbar = ({ HomeRef, AboutRef, ProjectsRef, ContactRef }) => {
+
+  const scrollToSection = (ref) => {
+    console.log(ref.current)
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const openResume = () => {
+    window.open(resume, '_blank', 'noopener,noreferrer');
+  };
+  
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a className="navbar-brand navbar-margin-left" href="#">
         Rhys Lee
       </a>
       <button
@@ -21,24 +33,29 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">
+            <button className="nav-link" onClick={() => scrollToSection(HomeRef)}>
               Home
-            </a>
+            </button>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <button className="nav-link" onClick={() => scrollToSection(AboutRef)}>
               About
-            </a>
+            </button>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <button className="nav-link" onClick={() => scrollToSection(ProjectsRef)}>
               Projects
-            </a>
+            </button>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <button className="nav-link" onClick={() => scrollToSection(ContactRef)}>
               Contact
-            </a>
+            </button>
+          </li>
+          <li className="nav-item">
+            <button className="nav-link" onClick={openResume}>
+              Resume
+            </button>
           </li>
         </ul>
       </div>

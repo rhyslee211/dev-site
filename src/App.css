@@ -37,6 +37,10 @@
   }
 }
 
+.navbar-margin-left {
+  margin-left: 20px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
