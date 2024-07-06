@@ -76,7 +76,7 @@ I have created this project to learn react as well as to develop a portfolio sit
 
 Rhys Lee - rhyslee211@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/rhyslee211/dev-site](https://github.com/rhyslee211/dev-site)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
