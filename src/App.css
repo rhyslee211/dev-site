@@ -36,7 +36,7 @@
     transform: rotate(360deg);
   }
 }
-
+/*
 .navbar-margin-left {
   margin-left: 20px;
 }
@@ -45,21 +45,15 @@
   max-width: 300px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
 }
 
-.footer {
-  border-width: 1px;
-}
-
-.contact-info {
+contact-info {
   display: flex;
-  align-items: center; /* Align items vertically in the center */
-  justify-content: center; /* Align items horizontally in the center */
-  gap: 5px; /* Optional: Adds some space between the items */
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Optional: 
 }
+*/
 
 @tailwind base;
 @tailwind components;
