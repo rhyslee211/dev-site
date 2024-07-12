@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <div ref={ContactRef}>
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }
