@@ -6,13 +6,13 @@ import { CiMail } from "react-icons/ci";
 
 const Footer = () => {
   return (
-    <footer className="footer border">
+    <footer className="footer border shadow">
 
-      <div className="">
+      <div className="text-lg flex justify-center">
           Thank you for visiting my portfolio!
       </div>
 
-      <div className="flex-row flex">
+      <div className="flex-row flex justify-start lg:justify-end">
         <a
           target="_blank"
           rel="noreferrer"
@@ -38,14 +38,17 @@ const Footer = () => {
           <CiMail size={40} className="text-black" />
         </a>
       </div>
-      <div className="gap-1.5">
-          Made With <a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a> and <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">TailwindCSS</a>
+      <div className="flex justify-start lg:justify-end">
+          Made With&nbsp;<a href="https://reactjs.org/" target="_blank" rel="noreferrer" className="underline text-cyan-600">React</a>&nbsp;and&nbsp;<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer" className="underline text-cyan-600">TailwindCSS</a>
           {/*<a href="https://reactjs.org/" target="_blank" rel="noreferrer" className="flex">
             <FaReact size={40} className="text-black w-auto" />
           </a>
           <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer" className="flex">
             <RiTailwindCssFill size={40} className="text-lightblue" />
           </a>*/}
+      </div>
+      <div className="flex justify-start lg:justify-end">
+        © 2024 Rhys Lee
       </div>
     </footer>
   );

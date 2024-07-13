@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <header
         id="Navbar"
-        className="fixed left-0 top-0 z-50 flex h-20 w-full items-center justify-center border-b-2"
+        className=""
       >
         <Navbar HomeRef={HomeRef} AboutRef={AboutRef} ProjectsRef={ProjectsRef} ContactRef={ContactRef} />
       </header>

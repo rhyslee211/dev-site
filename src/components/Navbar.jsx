@@ -1,6 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import resume from "../assets/RhysLeeResume.pdf";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = ({ HomeRef, AboutRef, ProjectsRef, ContactRef }) => {
 
@@ -14,46 +14,41 @@ const Navbar = ({ HomeRef, AboutRef, ProjectsRef, ContactRef }) => {
   };
   
   return (
-    <nav className="">
-      <a className="" href="#">
+    <nav className="sticky top-0 bg-gray-900 text-gray-200 flex justify-between align-middle">
+      <a className="text-lg" href="#">
         Rhys Lee
       </a>
       <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        data-collapse-toggle="navbar-default"
+        className="lg:hidden"
       >
-        <span className="navbar-toggler-icon"></span>
+        <GiHamburgerMenu size={35} />
       </button>
 
-      <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav">
-          <li className="nav-item active">
-            <button className="nav-link" onClick={() => scrollToSection(HomeRef)}>
+      <div className="hidden" id="navbarNavDropdown">
+        <ul className="">
+          <li className="">
+            <button className="" onClick={() => scrollToSection(HomeRef)}>
               Home
             </button>
           </li>
-          <li className="nav-item">
-            <button className="nav-link" onClick={() => scrollToSection(AboutRef)}>
+          <li className="">
+            <button className="" onClick={() => scrollToSection(AboutRef)}>
               About
             </button>
           </li>
-          <li className="nav-item">
-            <button className="nav-link" onClick={() => scrollToSection(ProjectsRef)}>
+          <li className="">
+            <button className="" onClick={() => scrollToSection(ProjectsRef)}>
               Projects
             </button>
           </li>
-          <li className="nav-item">
-            <button className="nav-link" onClick={() => scrollToSection(ContactRef)}>
+          <li className="">
+            <button className="" onClick={() => scrollToSection(ContactRef)}>
               Contact
             </button>
           </li>
-          <li className="nav-item">
-            <button className="nav-link" onClick={openResume}>
+          <li className="">
+            <button className="" onClick={openResume}>
               Resume
             </button>
           </li>
