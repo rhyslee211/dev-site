@@ -14,8 +14,8 @@ const Navbar = ({ HomeRef, AboutRef, ProjectsRef, ContactRef }) => {
   };
   
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand navbar-margin-left ps-2" href="#">
+    <nav className="">
+      <a className="" href="#">
         Rhys Lee
       </a>
       <button

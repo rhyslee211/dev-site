@@ -12,20 +12,20 @@ const Footer = () => {
           Thank you for visiting my portfolio!
       </div>
 
-      <div>
-        <div className="w-10">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.github.com/rhyslee211"
-          >
-            <AiFillGithub size={40} className="text-black" />
-          </a>
-        </div>
+      <div className="flex-row flex">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.github.com/rhyslee211"
+          className="w-10"
+        >
+          <AiFillGithub size={40} className="text-black" />
+        </a>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/rhys-lee/"
+          className="w-10"
         >
           <AiOutlineLinkedin size={40} className="text-black" />
         </a>
@@ -33,6 +33,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
           href="mailto:“rhyslee211@gmail.com”"
+          className="w-10"
         >
           <CiMail size={40} className="text-black" />
         </a>
