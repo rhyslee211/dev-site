@@ -14,19 +14,20 @@ const Navbar = ({ HomeRef, AboutRef, ProjectsRef, ContactRef }) => {
   };
   
   return (
-    <nav className="sticky top-0 bg-gray-900 text-gray-200 flex justify-between align-middle">
-      <a className="text-lg" href="#">
+    <nav className="py-1 sticky top-0 bg-slate-700 text-gray-200 flex justify-between align-middle lg:justify-start">
+      <a className="text-lg pl-1" href="#">
         Rhys Lee
       </a>
       <button
         data-collapse-toggle="navbar-default"
-        className="lg:hidden"
+        className="lg:hidden pr-1"
+        aria-controls="navbar-default" aria-expanded="false"
       >
         <GiHamburgerMenu size={35} />
       </button>
 
-      <div className="hidden" id="navbarNavDropdown">
-        <ul className="">
+      <div className="hidden w-full lg:block" id="navbar-default">
+        <ul className="font-medium flex flex-col">
           <li className="">
             <button className="" onClick={() => scrollToSection(HomeRef)}>
               Home

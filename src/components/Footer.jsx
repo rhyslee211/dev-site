@@ -6,20 +6,20 @@ import { CiMail } from "react-icons/ci";
 
 const Footer = () => {
   return (
-    <footer className="footer border shadow">
+    <footer className="footer bg-slate-700 text-gray-200 w-full">
 
       <div className="text-lg flex justify-center">
           Thank you for visiting my portfolio!
       </div>
 
-      <div className="flex-row flex justify-start lg:justify-end">
+      <div className="flex-row flex justify-center lg:justify-end">
         <a
           target="_blank"
           rel="noreferrer"
           href="https://www.github.com/rhyslee211"
           className="w-10"
         >
-          <AiFillGithub size={40} className="text-black" />
+          <AiFillGithub size={40} className="text-white" />
         </a>
         <a
           target="_blank"
@@ -27,7 +27,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/rhys-lee/"
           className="w-10"
         >
-          <AiOutlineLinkedin size={40} className="text-black" />
+          <AiOutlineLinkedin size={40} className="text-white" />
         </a>
         <a
           target="_blank"
@@ -35,10 +35,10 @@ const Footer = () => {
           href="mailto:“rhyslee211@gmail.com”"
           className="w-10"
         >
-          <CiMail size={40} className="text-black" />
+          <CiMail size={40} className="text-white" />
         </a>
       </div>
-      <div className="flex justify-start lg:justify-end">
+      <div className="flex justify-center lg:justify-end">
           Made With&nbsp;<a href="https://reactjs.org/" target="_blank" rel="noreferrer" className="underline text-cyan-600">React</a>&nbsp;and&nbsp;<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer" className="underline text-cyan-600">TailwindCSS</a>
           {/*<a href="https://reactjs.org/" target="_blank" rel="noreferrer" className="flex">
             <FaReact size={40} className="text-black w-auto" />
@@ -47,7 +47,7 @@ const Footer = () => {
             <RiTailwindCssFill size={40} className="text-lightblue" />
           </a>*/}
       </div>
-      <div className="flex justify-start lg:justify-end">
+      <div className="flex justify-center lg:justify-end">
         © 2024 Rhys Lee
       </div>
     </footer>
