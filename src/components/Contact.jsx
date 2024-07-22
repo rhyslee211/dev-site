@@ -5,7 +5,7 @@ import { Form } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div className="">
+    <div className="bg-amber-100">
       <div className="">
         <h1>Contact Me</h1>
         Name:<br />

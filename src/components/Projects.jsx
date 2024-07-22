@@ -2,10 +2,10 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="">
+    <div className="bg-amber-100">
       <div className="">
         <div className="">
-          <h1>Projects</h1>
+          <h1>Portfolio</h1>
             <p>
                 <a href="">Project 1</a>
             </p>
