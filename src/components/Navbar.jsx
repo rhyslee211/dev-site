@@ -15,9 +15,9 @@ const Navbar = ({ HomeRef, AboutRef, ProjectsRef, ContactRef }) => {
   
   return (
     <nav className="py-1 sticky top-0 bg-slate-700 text-gray-200 flex justify-between align-middle lg:justify-start">
-      <a className="text-lg pl-1 align-middle" href="#">
+      <button className="text-lg pl-1 align-middle">
         Rhys Lee
-      </a>
+      </button>
       <button
         data-collapse-toggle="navbar-default"
         className="lg:hidden pr-1"
