@@ -6,16 +6,20 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="bg-amber-100">
-      <div className="">
-        <h1>Contact Me</h1>
-        Name:<br />
-        <input type="text" id="name" name="name" className="" />
-        <br />
-        Email:<br />
-        <input type="text" id="email" name="email" className="" />
-        <br />
-        Message:<br />
-        <input type="text" id="message" name="message" className="" />
+      <div className="justify-evenly flex flex-col items-center h-96">
+        <h1 className="text-lg font-bold p-2">Contact Me</h1>
+        <div className="items-center">
+          <div>Name:</div>
+            <input type="text" id="name" name="name" className="" />
+          </div>
+        <div className="items-center">
+          <div className="items-center">Email:</div>
+            <input type="text" id="email" name="email" className="" />
+          </div>
+        <div className="items-center">
+          <div>Message:</div>
+            <input type="text" id="Message" name="Message" className="" />
+          </div>
       </div>
     </div>
   );
