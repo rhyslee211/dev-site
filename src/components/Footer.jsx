@@ -6,7 +6,7 @@ import { CiMail } from "react-icons/ci";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-slate-700 text-gray-200 w-full flex flex-col lg:flex-row justify-between lg:h-28 items-center">
+    <footer className="footer bg-slate-900 text-gray-200 w-full flex flex-col lg:flex-row justify-between lg:h-28 items-center">
 
       <div className="text-lg flex justify-center items-center pl-4">
           Thank you for visiting my portfolio!

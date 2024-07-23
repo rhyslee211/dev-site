@@ -14,7 +14,7 @@ const Navbar = ({ HomeRef, AboutRef, ProjectsRef, ContactRef }) => {
   };
   
   return (
-    <nav className="py-1 sticky top-0 bg-slate-700 text-gray-200 flex flex-row justify-between items-center align-middle lg:justify-evenly">
+    <nav className="py-1 bg-slate-900 text-white flex flex-row justify-between items-center align-middle lg:justify-evenly lg:pl-40">
       <button className="text-lg pl-2 lg:font-medium lg:text-base lg:hidden">
         Rhys Lee
       </button>
@@ -27,28 +27,28 @@ const Navbar = ({ HomeRef, AboutRef, ProjectsRef, ContactRef }) => {
       </button>
 
       <div className="hidden w-full lg:block" id="navbar-default">
-        <ul className="text-lg flex flex-col lg:flex-row lg:justify-start lg:w-1/2">
-          <li className="">
+        <ul className="text-lg flex flex-col lg:flex-row lg:justify-between lg:w-96 lg:pl-4 lg:my-4">
+          <li className="hover:text-gray-400">
             <button className="" onClick={() => scrollToSection(HomeRef)}>
               Home
             </button>
           </li>
-          <li className="">
+          <li className="hover:text-gray-400">
             <button className="" onClick={() => scrollToSection(AboutRef)}>
               About
             </button>
           </li>
-          <li className="">
+          <li className="hover:text-gray-400">
             <button className="" onClick={() => scrollToSection(ProjectsRef)}>
               Projects
             </button>
           </li>
-          <li className="">
+          <li className="hover:text-gray-400">
             <button className="" onClick={() => scrollToSection(ContactRef)}>
               Contact
             </button>
           </li>
-          <li className="">
+          <li className="hover:text-gray-400">
             <button className="" onClick={openResume}>
               Resume
             </button>
