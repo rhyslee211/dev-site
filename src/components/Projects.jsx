@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="bg-amber-100">
+    <div className="bg-white">
       <div className="">
         <div className="">
           <h1>Portfolio</h1>

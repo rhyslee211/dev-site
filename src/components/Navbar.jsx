@@ -20,10 +20,14 @@ const Navbar = ({ HomeRef, AboutRef, ProjectsRef, ContactRef }) => {
       </button>
       <button
         data-collapse-toggle="navbar-default"
-        className="lg:hidden pr-2"
+        className="hidden pr-2"
         aria-controls="navbar-default" aria-expanded="false"
       >
         <GiHamburgerMenu size={35} />
+      </button>
+
+      <button className="lg:hidden mr-2 px-2 bg-white text-slate-900 rounded-md" onClick={openResume}>
+        Resume
       </button>
 
       <div className="hidden w-full lg:block" id="navbar-default">
@@ -48,7 +52,7 @@ const Navbar = ({ HomeRef, AboutRef, ProjectsRef, ContactRef }) => {
               Contact
             </button>
           </li>
-          <li className="hover:text-gray-400">
+          <li className="hover:bg-slate-400 px-2 bg-white text-slate-900 rounded-md">
             <button className="" onClick={openResume}>
               Resume
             </button>
