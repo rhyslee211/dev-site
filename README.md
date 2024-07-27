@@ -68,6 +68,10 @@ I have created this project to learn react as well as to develop a portfolio sit
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![TailwindCSS][TailwindCSS-shield]][TailwindCSS-url]
 
+### Deployed With
+
+* [![Netlify][Netlify]][Netlify-url]
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -112,3 +116,5 @@ Project Link: [https://github.com/rhyslee211/dev-site](https://github.com/rhysle
 [Bootstrap-url]: https://getbootstrap.com
 [TailwindCSS-shield]: https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat-square&logo=tailwindcss&logoColor=white
 [TailwindCSS-url]: https://tailwindcss.com/
+[Netlify-url]: https://www.netlify.com/
+[Netlify]: https://img.shields.io/badge/-netlify-blue?style=for-the-badge&logo=netlify&logoColor=green
