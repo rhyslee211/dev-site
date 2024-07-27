@@ -11,7 +11,7 @@ const Contact = () => {
     message: ""
   });
 
-  const [result, setResult] = useState(null);
+  //const [result, setResult] = useState(null);
 
   const [status, setStatus] = useState("Submit");
 
@@ -27,7 +27,7 @@ const Contact = () => {
     if(status === "Sending...") return;
 
     if(!emailForm.name || !emailForm.email || !emailForm.message) {
-      setResult({ error: "Please fill out all fields" });
+      //setResult({ error: "Please fill out all fields" });
       return;
     }
 
@@ -38,8 +38,8 @@ const Contact = () => {
       body: JSON.stringify(emailForm),
     });
     const result = await res.json();
-    //console.log(result);
-    setResult(result);
+    console.log(result);
+    //setResult(result);
     setStatus("Submit");
     resetEmailForm();
   };
