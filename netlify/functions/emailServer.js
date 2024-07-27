@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-require('dotenv').config(); // Load environment variables
+//require('dotenv').config(); // Load environment variables
 const { google } = require('googleapis');
 
 const OAuth2 = google.auth.OAuth2;
@@ -20,7 +20,7 @@ exports.handler = async (event, context) => {
     refresh_token: process.env.REFRESH_TOKEN,
   });
 
-  const accessToken = await oauth2Client.getAccessToken();
+  //const accessToken = await oauth2Client.getAccessToken();
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -37,10 +37,9 @@ exports.handler = async (event, context) => {
   });
 
   const mailOptions = {
-    from: email,
     to: 'rhyslee211@gmail.com',
     subject: `New message from ${name}`,
-    text: message,
+    text: `From: ${email} \n\n${message}`,
   };
 
   try {
