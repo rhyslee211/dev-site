@@ -4,14 +4,12 @@ const About = () => {
   return (
     <div className="bg-white">
       <div className="">
-        <div className="">
-          <h1 className="text-4xl font-bold">About Me</h1>
-          <p>
-            I am a Full-Stack Software Developer with a passion for creating
-            beautiful and functional applications. I am proficient in Java,
-            JavaScript, React, Node.js, Express, MySQL, and more. I am
-            constantly learning new technologies and expanding my skill set.
-          </p>
+        <div className="flex flex-col items-center">
+          <h1 className="text-5xl font-bold items-center w-fit">About Me</h1>
+          <div className="text-lg">
+            I'm a Full-Stack Engineer from the NJ/NYC area who enjoys developing high-quality and user-friendly applications.
+          </div>
+          <div className="text-2xl font-bold">My Tech Stack:</div>
         </div>
       </div>
     </div>
