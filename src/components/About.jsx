@@ -1,7 +1,10 @@
 import React from "react";
-import { IoLogoJavascript, IoLogoReact } from "react-icons/io5";
-import { SiPostgresql } from "react-icons/si";
-import { FaNodeJs, FaJava, FaPython   } from "react-icons/fa";
+import JavaImg from "../assets/Java.svg";
+import PythonImg from "../assets/Python.svg";
+import NodeJSImg from "../assets/NodeJS.svg";
+import ReactImg from "../assets/React.svg";
+import PostgresSQLImg from "../assets/PostgresSQL.svg";
+import JavaScriptImg from "../assets/Java.svg";
 
 const About = () => {
   return (
@@ -15,16 +18,16 @@ const About = () => {
           <div>
             <div className="text-2xl font-bold">My Tech Stack:</div>
             <div className="text-lg p-4 flex flex-col items-center">
-              <div><IoLogoJavascript size={60} color="#f7df1e" className="" /></div>
+              {/*<div><svg xmlns="../assets/Java.svg" fill="currentColor" viewBox="0 0 16 16" width="60" height="60" className="bi bi-google"/></div>
               <div className="flex flex-row  items-center">
-                <div><IoLogoReact size={60} color="#61DAFB" className="" /></div>
-                <div><FaNodeJs size={60} color="#339933" className="" /></div>
+                <div><ReactImg width="60" height="60" className="" /></div>
+                <div><NodeJSImg width="60" height="60" className="" /></div>
               </div>
               <div className="flex flex-row  items-center">
-                <div><FaJava size={60} color="#339933" className="" /></div>
-                <div><FaPython size={60} color="#000000" className="" /></div>
+                <div><JavaImg width="60" height="60" className="" /></div>
+                <div><PythonImg width="60" height="60" className="" /></div>
               </div>
-              <div><SiPostgresql size={60} color="#61DAFB" className="" /></div>
+              <div><PostgresSQLImg width="60" height="60" className="" /></div>*/}
             </div>
           </div>
         </div>
