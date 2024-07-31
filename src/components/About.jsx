@@ -1,10 +1,10 @@
 import React from "react";
-import JavaImg from "../assets/Java.svg";
-import PythonImg from "../assets/Python.svg";
-import NodeJSImg from "../assets/NodeJS.svg";
-import ReactImg from "../assets/React.svg";
-import PostgresSQLImg from "../assets/PostgresSQL.svg";
-import JavaScriptImg from "../assets/Java.svg";
+import {ReactComponent as JavaImg} from "../assets/Java.svg";
+import {ReactComponent as PythonImg} from "../assets/Python.svg";
+import {ReactComponent as NodeJSImg} from "../assets/NodeJS.svg";
+import {ReactComponent as ReactImg} from "../assets/React.svg";
+import {ReactComponent as PostgresSQLImg} from "../assets/PostgresSQL.svg";
+import {ReactComponent as JavaScriptImg} from "../assets/JavaScript.svg";
 
 const About = () => {
   return (
@@ -18,16 +18,16 @@ const About = () => {
           <div>
             <div className="text-2xl font-bold">My Tech Stack:</div>
             <div className="text-lg p-4 flex flex-col items-center">
-              {/*<div><svg xmlns="../assets/Java.svg" fill="currentColor" viewBox="0 0 16 16" width="60" height="60" className="bi bi-google"/></div>
+              <div><JavaScriptImg fill="currentColor" width="60" height="60" className="m-4"/></div>
               <div className="flex flex-row  items-center">
-                <div><ReactImg width="60" height="60" className="" /></div>
-                <div><NodeJSImg width="60" height="60" className="" /></div>
+                <div><ReactImg width="60" height="60" className="m-4" /></div>
+                <div><NodeJSImg width="60" height="60" className="m-4" /></div>
               </div>
               <div className="flex flex-row  items-center">
-                <div><JavaImg width="60" height="60" className="" /></div>
-                <div><PythonImg width="60" height="60" className="" /></div>
+                <div><JavaImg width="60" height="60" className="m-4" /></div>
+                <div><PythonImg width="60" height="60" className="m-4" /></div>
               </div>
-              <div><PostgresSQLImg width="60" height="60" className="" /></div>*/}
+              <div><PostgresSQLImg width="60" height="60" className="m-4" /></div>
             </div>
           </div>
         </div>
