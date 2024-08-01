@@ -5,8 +5,8 @@ const Projects = () => {
     <div className="bg-white">
       <div className="">
         <div className="">
-          <h1>Portfolio</h1>
-            {/*<p>
+          {/*<h1>Portfolio</h1>
+            <p>
                 <a href="">Project 1</a>
             </p>
             <p>
@@ -16,7 +16,7 @@ const Projects = () => {
                 <a href="">Project 3</a>
             </p>*/}
         </div>
-        </div>
+      </div>
     </div>
 )};
 
