@@ -6,6 +6,8 @@ import { ReactComponent as NodeJSImg } from "../assets/NodeJS.svg";
 import { ReactComponent as ReactImg } from "../assets/React.svg";
 import { ReactComponent as PostgresSQLImg } from "../assets/PostgresSQL.svg";
 import { ReactComponent as JavaScriptImg } from "../assets/JavaScript.svg";
+import { ReactComponent as AndroidStudioImg } from "../assets/AndroidStudio.svg";
+import { ReactComponent as MySQLImg } from "../assets/MySQLImg.svg";
 import "../Stylesheets/animatedList.css";
 
 const About = () => {
@@ -16,6 +18,8 @@ const About = () => {
     <JavaImg width="60" height="60" className="m-4" />,
     <PythonImg width="60" height="60" className="m-4" />,
     <PostgresSQLImg width="60" height="60" className="m-4" />,
+    <AndroidStudioImg width="60" height="60" className="m-4" />,
+    <MySQLImg width="60" height="60" className="m-4" />,
   ];
 
   // Duplicate the items to create a seamless loop
