@@ -5,8 +5,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = ({ HomeRef, AboutRef, ProjectsRef, ContactRef }) => {
 
   const scrollToSection = (ref) => {
-    console.log(ref.current)
-    ref.current.scrollIntoView({ behavior: 'smooth' });
+    const offset = -68; // Adjust this value based on your navbar height
+    const elementPosition = ref.current.getBoundingClientRect().top  + window.scrollY + offset;
+    window.scrollTo({
+      top: elementPosition,
+      behavior: 'smooth'
+    });
   };
 
   const openResume = () => {

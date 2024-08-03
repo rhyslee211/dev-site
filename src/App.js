@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <header
         id="Navbar"
-        className="sticky top-0"
+        className="sticky top-0 z-50"
       >
         <Navbar HomeRef={HomeRef} AboutRef={AboutRef} ProjectsRef={ProjectsRef} ContactRef={ContactRef} />
       </header>
