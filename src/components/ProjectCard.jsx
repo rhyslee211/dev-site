@@ -1,5 +1,4 @@
 import React from "react";
-import { BiUnderline } from "react-icons/bi";
 
 
 const ProjectCard = ({ project }) => {
@@ -12,7 +11,7 @@ const ProjectCard = ({ project }) => {
     <div className="bg-gray-300 rounded-md h-96 w-5/6 border-2 border-gray-500 my-2 lg:w-80" >
         <div className="flex flex-col h-full w-full items-center justify-center">
             <div className="w-full">
-                <img className="object-cover h-20 w-full rounded-md border-2 border-gray-500" src={project.image}></img>
+                <img className="object-cover h-20 w-full rounded-md border-2 border-gray-500" alt="hardcoded default for now" src={project.image}></img>
             </div>
             <div className="font-bold text-xl m-1">
                 {project.name}

@@ -1,5 +1,5 @@
 // src/About.js
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { ReactComponent as JavaImg } from "../assets/Java.svg";
 import { ReactComponent as PythonImg } from "../assets/Python.svg";
 import { ReactComponent as NodeJSImg } from "../assets/NodeJS.svg";
