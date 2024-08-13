@@ -65,7 +65,6 @@ I have created this project to learn react as well as to develop a portfolio sit
 ### Built With
 
 * [![React][React.js]][React-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![TailwindCSS][TailwindCSS-shield]][TailwindCSS-url]
 
 ### Deployed With
@@ -112,8 +111,6 @@ Project Link: [https://github.com/rhyslee211/dev-site](https://github.com/rhysle
 [product-screenshot]: images/screenshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
 [TailwindCSS-shield]: https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat-square&logo=tailwindcss&logoColor=white
 [TailwindCSS-url]: https://tailwindcss.com/
 [Netlify-url]: https://www.netlify.com/
