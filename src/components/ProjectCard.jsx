@@ -20,11 +20,14 @@ const ProjectCard = ({ project }) => {
                 {project.description}
             </div>
             <div className="flex flex-row mt-auto rounded-md justify-between w-full h-12">
-                {project.githubUrl !== null && project.githubUrl !== undefined && <div className={`w-full border-t-2 border-gray-500 ${project.demoUrl !== null && project.demoUrl !== undefined ? 'border-r-2' : 'border-r-none'}`}>
+                {project.githubUrl !== null && project.githubUrl !== undefined && <div className={`w-full border-t-2 border-gray-500 ${(project.demoUrl !== null && project.demoUrl !== undefined) || (project.downloadUrl !== null && project.downloadUrl !== undefined)  ? 'border-r-2' : 'border-r-none'}`}>
                     <button className="text-center h-full w-full" onClick={() => openWebsite(project.githubUrl)}>Code</button>
                 </div>}
-                {project.demoUrl !== null && project.demoUrl !== undefined && <div className="w-full border-t-2 border-gray-500">
+                {project.demoUrl !== null && project.demoUrl !== undefined && <div className={`w-full border-t-2 border-gray-500 ${project.downloadUrl !== null && project.downloadUrl !== undefined ? 'border-r-2' : 'border-r-none'}`}>
                     <button className="text-center h-full w-full" onClick={() => openWebsite(project.demoUrl)}>Demo</button>
+                </div>}
+                {project.downloadUrl !== null && project.downloadUrl !== undefined && <div className="w-full border-t-2 border-gray-500">
+                    <button className="text-center h-full w-full" onClick={() => openWebsite(project.downloadUrl)}>Download</button>
                 </div>}
             </div>
         </div>
