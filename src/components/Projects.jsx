@@ -20,8 +20,8 @@ const Projects = () => {
       description: "Virtual Deck is an alternative to physical Stream Decks. It is an application that allows users to create custom buttons and macros that can be used to control OBS, Twitch, and other applications. I'm building this project using JavaScript and Electron.JS for the Front-End and using Node.JS and Express.JS for the Back-End.",
       image: VirtualDeckImg,
       githubUrl: "https://github.com/rhyslee211/virtual-deck",
-      demoUrl: "https://github.com/rhyslee211/virtual-deck/releases/tag/V0.1-windows-beta",
-      downloadUrl: "https://github.com/rhyslee211/virtual-deck/releases/download/V0.1-windows-beta/Virtual_Deck.exe"
+      demoUrl: "https://github.com/rhyslee211/virtual-deck",
+      downloadUrl: "https://github.com/rhyslee211/virtual-deck/releases/download/v0.1.0_Windows/Virtual.Deck.exe"
     },
     {
       name: "Java Checkers",
